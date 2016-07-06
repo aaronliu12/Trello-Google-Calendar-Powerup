@@ -1,9 +1,9 @@
 {
   "name": "Student Google Calendar",
   "description": "Links to the student's calendar",
-  "details":"Link",
+  "details":"Link's to student's Google Calendar",
   "icon": {
-    "url": "./images/trello-icon.png"
+    "url": "./icon.png"
   },
   "author": "App Ark",
   "capabilities": [
