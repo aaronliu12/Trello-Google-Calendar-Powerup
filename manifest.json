@@ -1,5 +1,5 @@
 {
-  "name": "Student Google Calendar",
+  "name": "Student's Google Calendar",
   "description": "Links to the student's calendar",
   "details":"Link's to student's Google Calendar",
   "icon": {
@@ -24,7 +24,7 @@
   },
   "recommend": {
     "urls": [
-      "https://trello.com"
+      "https://google.com"
     ]
   }
 }
