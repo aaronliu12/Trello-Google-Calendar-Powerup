@@ -1,6 +1,7 @@
 <html>
 <head>
 	<script src="https://trello.com/power-ups/power-up.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
 	<script>
 		TrelloPowerUp.initialize({
 			'board-buttons': function(t, board) {
@@ -14,7 +15,7 @@
 					// url: 'https://developers.trello.com/'
 					callback: function(t, board) {
 						t.board('name').then(function(board) {
-							window.location.replace("https://google.com");
+							document.location.href = 'https://google.com';
 						});
 					}
 				}
