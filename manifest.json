@@ -19,12 +19,12 @@
   ],
   "connectors": {
     "iframe": {
-      "url": "./"
+      "url": "https://google.com"
     }
   },
   "recommend": {
     "urls": [
-      "https://google.com"
+      "https://trello.com"
     ]
   }
 }
