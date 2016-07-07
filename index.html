@@ -11,7 +11,7 @@
 					icon: './images/trello-icon-F6F6F6.svg',
 					text: "Sample Power-Up",
 					// Pass a URL instead of a callback to make a simple link
-					url: 'https://developers.trello.com/'
+					url: 'https://developers.trello.com/',
 					callback: function(t, board) {
 						t.board('name').then(function(board) {
 							console.log("This board is named:" + board.name);
