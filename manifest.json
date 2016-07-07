@@ -19,7 +19,7 @@
   ],
   "connectors": {
     "iframe": {
-      "url": "https://google.com"
+      "url": "./"
     }
   },
   "recommend": {
