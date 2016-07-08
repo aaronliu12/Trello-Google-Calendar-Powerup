@@ -13,9 +13,9 @@
 					// Pass a URL instead of a callback to make a simple link
 					//url: 'https://calendar.google.com/calendar/b/render?aaronliu12@gmail.com#main_7',
 					callback: function(t, board) {
+						t.get('https://calendar.google.com/calendar/b/render?aaronliu12@gmail.com#main_7');
 						t.board('name').then(function(board) {
-							var t = TrelloPowerUp.iframe();
-							
+							console.log(board)
 							
 						});
 					}
@@ -202,6 +202,5 @@
 	</script>
 </head>
 <body>
-	<div>Hello</div>
 </body>
 </html>
