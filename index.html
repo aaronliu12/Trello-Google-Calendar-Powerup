@@ -5,9 +5,6 @@
 	<script>
 		TrelloPowerUp.initialize({
 			'board-buttons': function(t, board) {
-				var iframe = "<iframe src='https://calendar.google.com/calendar/embed?src=aaron%40app-ark.com&ctz=Asia/Taipei' style='border: 0' width='800' height='600' frameborder='0' scrolling='no'></iframe>";
-				var board = document.getElementById("board");
-
 
 				return [
 				{
@@ -157,7 +154,7 @@
 										t.popup({
 											title: 'Popup Iframe',
 											//url: t.signUrl('./attachment-section.html')
-											url: './attachment-section.html'
+											url: '<iframe src="https://calendar.google.com/calendar/embed?src=aaron%40app-ark.com&ctz=Asia/Taipei" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>'
 										});
 									}
 								}
