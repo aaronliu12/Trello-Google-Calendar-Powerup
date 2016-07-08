@@ -15,21 +15,8 @@
 					//url: 'https://calendar.google.com/calendar/b/render?aaronliu12@gmail.com#main_7',
 					callback: function(t, board) {
 						t.overlay({url: "https://calendar.google.com/calendar/embed?src=aaron%40app-ark.com&ctz=Asia/Taipei",
-						items: [
-								{
-									text: "Nested Popup",
-									callback: function(t) {
-										console.log("Option 1 chosen");
-										t.popup({
-											title: "Nested Options",
-											items: [
-												{text: "Link",url:"https://developers.trello.com/"},
-												{text: "Link",url:"https://developers.trello.com/"}]
-
-										});
-									}
-								}]
 						})
+						t.back();
 
 				}
 				}
