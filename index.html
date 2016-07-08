@@ -15,6 +15,8 @@
 					callback: function(t, board) {
 						t.board('name').then(function(board) {
 							console.log("This board is named:" + board.name);
+							var string = board.name.split(" ");
+							console.log(string);
 						});
 					}
 				}
