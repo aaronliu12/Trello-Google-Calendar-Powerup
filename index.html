@@ -11,13 +11,12 @@
 					icon: './images/trello-icon-F6F6F6.svg',
 					text: "Student's Google Calendar",
 					// Pass a URL instead of a callback to make a simple link
-					//url: 'https://calendar.google.com/calendar/b/render?aaronliu12@gmail.com#main_7',
+					url: t.overlay('https://calendar.google.com/calendar/b/render?aaronliu12@gmail.com#main_7'),
 					callback: function(t, board) {
 						t.board('name').then(function(board) {
 							console.log(board)
 							
 						});
-						t.overlay({url:"https://calendar.google.com/calendar/b/render?aaronliu12@gmail.com#main_7"});
 					}
 				}
 				];
