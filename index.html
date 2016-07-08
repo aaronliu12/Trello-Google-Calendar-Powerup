@@ -11,12 +11,13 @@
 					icon: './images/trello-icon-F6F6F6.svg',
 					text: "Student's Google Calendar",
 					// Pass a URL instead of a callback to make a simple link
-					url: 'https://calendar.google.com/calendar/b/render?aaronliu12@gmail.com#main_7',
+					//url: 'https://calendar.google.com/calendar/b/render?aaronliu12@gmail.com#main_7',
 					callback: function(t, board) {
 						t.board('name').then(function(board) {
-							console.log("This board is named:" + board.name);
-							var string = board.name.split(" ");
-							console.log(string);
+							var iframe = "<iframe src='https://calendar.google.com/calendar/embed?src=aaron%40app-ark.com&ctz=Asia/Taipei' style='border: 0' width='800' height='600' frameborder='0' scrolling='no'></iframe>"
+							var board = document.getElementById("board");
+							board.append(iframe);
+							
 						});
 					}
 				}
@@ -120,7 +121,7 @@
 				// Button with a nested popup callback
 				{
 					icon: './images/trello-icon-999.svg',
-					text: "Sample Popup",
+					text: "Student's Google Calendar",
 					callback: function(t, card) {
 						t.popup({
 							title: 'Options',
