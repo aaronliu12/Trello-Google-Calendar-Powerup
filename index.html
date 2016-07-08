@@ -5,11 +5,6 @@
 	<script>
 		TrelloPowerUp.initialize({
 			'board-buttons': function(t, board) {
-				t.popup({
-					title: "Power-Up Settings",
-					url: 'settings.html',
-					height: 250
-				});
 				
 				return [
 				{
@@ -21,7 +16,12 @@
 					callback: function(t, board) {
 						t.board('name').then(function(board) {
 							console.log(board)
-							
+							{
+  								"context":{
+    							"command":"attachment-sections",
+  							},
+							  "locale":"en-US"
+							}
 						});
 						//t.overlay({url: "https://calendar.google.com/calendar/b/render?aaronliu12@gmail.com#main_7"});
 					}
