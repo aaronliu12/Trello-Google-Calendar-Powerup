@@ -16,9 +16,10 @@
 					callback: function(t, board) {
 						t.overlay({url: "https://calendar.google.com/calendar/embed?src=aaron%40app-ark.com&ctz=Asia/Taipei"
 						});
-						t.boardBar({
-											url: "bar-contents.html",
-											height:550
+						t.popup({
+											title: 'Popup Iframe',
+											url: t.signUrl("https://calendar.google.com/calendar/embed?src=aaron%40app-ark.com&ctz=Asia/Taipei"),
+											url: "https://calendar.google.com/calendar/embed?src=aaron%40app-ark.com&ctz=Asia/Taipei"
 										});
 						
 
