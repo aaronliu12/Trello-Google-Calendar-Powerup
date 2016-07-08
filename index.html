@@ -14,17 +14,12 @@
 
 					//url: 'https://calendar.google.com/calendar/b/render?aaronliu12@gmail.com#main_7',
 					callback: function(t, board) {
-						//t.overlay({url: "https://calendar.google.com/calendar/embed?src=aaron%40app-ark.com&ctz=Asia/Taipei"
-						//})
-						t.popup({
-							title: 'Options',
-							items: [
-								{
-									callback: function(t) {
-										t.overlay({url: "https://calendar.google.com/calendar/embed?src=aaron%40app-ark.com&ctz=Asia/Taipei"});
-									}
-								}
-				]})}}];
+						t.overlay({url: "https://calendar.google.com/calendar/embed?src=aaron%40app-ark.com&ctz=Asia/Taipei"
+						})
+
+				}
+				}
+				];
 			},
 			'card-badges': function(t, card) {
 				if(card.context.card === '563b532e4e998410d0d88e62') {
