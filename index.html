@@ -1,6 +1,7 @@
 <html>
 <head>
 	<script src="https://trello.com/power-ups/power-up.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script>
 		TrelloPowerUp.initialize({
 			'board-buttons': function(t, board) {
@@ -15,8 +16,7 @@
 					callback: function(t, board) {
 						t.board('name').then(function(board) {
 							var iframe = "<iframe src='https://calendar.google.com/calendar/embed?src=aaron%40app-ark.com&ctz=Asia/Taipei' style='border: 0' width='800' height='600' frameborder='0' scrolling='no'></iframe>";
-							var board = document.getElementById("board");
-							board.appendChild(iframe);
+							$("#board").append(iframe);
 							
 						});
 					}
