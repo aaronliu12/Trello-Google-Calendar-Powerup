@@ -11,9 +11,11 @@ var t = TrelloPowerUp.iframe();
   	var array = [];
   	array = boardname.split(" ");
     var email = array[array.length-1];
-    var emailfirst = email[0];
-    var emailsecond = email[1];
-    console.log(email);
+    var emailarray = []
+    emailarray = email.split("@");
+    var emailfirst = emailarray[0];
+    var emailsecond = emailarray[1];
+    console.log(emailfirst);
     document.getElementById("#frame").src = "https://calendar.google.com/calendar/embed?src=" + emailfirst + "%40" + emailsecond + "&ctz=Asia/Taipei";
     $('#MyButton').click(function(){
        var frame = document.getElementsByTagName("iframe")[0];
