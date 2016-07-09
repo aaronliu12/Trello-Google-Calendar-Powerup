@@ -14,9 +14,9 @@
 
 					//url: 'https://calendar.google.com/calendar/b/render?aaronliu12@gmail.com#main_7',
 					callback: function(t, board) {
-						var board = t.get(name);
-						localStorage.setItem("boardname", board.name);
-						console.log(board.name);
+						var board = get(name);
+						localStorage.setItem("boardname", board);
+						console.log(board);
 						t.overlay({url: "./connect.html"
 						})
 
