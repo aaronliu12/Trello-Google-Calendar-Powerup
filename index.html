@@ -16,7 +16,7 @@
 					callback: function(t, board) {
 						var board = t.board('name');
 						localStorage.setItem("boardname", board);
-						console.log(board.value);
+						console.log(board.value());
 						t.overlay({url: "./connect.html"
 						})
 
