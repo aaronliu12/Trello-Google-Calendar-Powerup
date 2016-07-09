@@ -12,6 +12,8 @@ var t = TrelloPowerUp.iframe();
        frame.remove();
        var button = document.getElementById("MyButton");
        button.remove();
+       var boardname = t.get(board);
+       console.log(boardname);
        t.closeOverlay();
     });
   });
