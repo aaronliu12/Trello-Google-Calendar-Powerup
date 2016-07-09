@@ -8,7 +8,7 @@
 var t = TrelloPowerUp.iframe();
   $(document).ready(function(){
   	var boardname = localStorage.getItem("boardname").split(" ");
-    var email = boardname[boardname.length-1].split("@");
+    var email = boardname[boardname.length-1];
     var emailfirst = email[0];
     var emailsecond = email[1];
     console.log(email);
