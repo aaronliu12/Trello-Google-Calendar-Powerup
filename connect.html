@@ -7,7 +7,9 @@
 <script>
 var t = TrelloPowerUp.iframe();
   $(document).ready(function(){
-
+	if (localStorage.getItem("boardname").indexOf("@") < 0){
+		t.popup({text:"Please input student's email address at the end of the board name"});
+	}
     //document.getElementById("#frame").src = "https://calendar.google.com/calendar/embed?src=" + emailfirst + "%40" + emailsecond + "&ctz=Asia/Taipei";
     $('#MyButton').click(function(){
        var frame = document.getElementsByTagName("iframe")[0];
