@@ -8,7 +8,7 @@
 var t = TrelloPowerUp.iframe();
   $(document).ready(function(){
   	var boardname = localStorage.getItem("boardname").split(" ");
-    console.log(boardname);
+    console.log(boardname[0]);
     $('#MyButton').click(function(){
        var frame = document.getElementsByTagName("iframe")[0];
        frame.remove();
