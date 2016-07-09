@@ -12,7 +12,7 @@ var t = TrelloPowerUp.iframe();
        frame.remove();
        var button = document.getElementById("MyButton");
        button.remove();
-       console.log(board);
+       console.log(localStorage.getItem("boardname"));
        t.closeOverlay();
     });
   });
