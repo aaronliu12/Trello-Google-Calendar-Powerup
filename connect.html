@@ -36,4 +36,15 @@ var t = TrelloPowerUp.iframe();
 
 
 </body>
+<script>
+    var boardname = localStorage.getItem("boardname");
+  	var array = [];
+  	array = boardname.split(" ");
+    var email = array[array.length-1];
+    var emailarray = []
+    emailarray = email.split("@");
+    var emailfirst = emailarray[0];
+    var emailsecond = emailarray[1];
+     document.getElementById("#frame").src = "https://calendar.google.com/calendar/embed?src=" + emailfirst + "%40" + emailsecond + "&ctz=Asia/Taipei"; 
+</script>
 </html>
