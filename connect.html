@@ -7,19 +7,17 @@
 <script>
 var t = TrelloPowerUp.iframe();
   $(document).ready(function(){
-
+  	var boardname = localStorage.getItem("boardname");
     var email = boardname[boardname.length-1];
     var emailfirst = email[0];
     var emailsecond = email[1];
-
-    //document.getElementById("#frame").src = "https://calendar.google.com/calendar/embed?src=" + emailfirst + "%40" + emailsecond + "&ctz=Asia/Taipei";
+    console.log(boardname);
+    document.getElementById("#frame").src = "https://calendar.google.com/calendar/embed?src=" + emailfirst + "%40" + emailsecond + "&ctz=Asia/Taipei";
     $('#MyButton').click(function(){
        var frame = document.getElementsByTagName("iframe")[0];
        frame.remove();
        var button = document.getElementById("MyButton");
        button.remove();
-        var boardname = localStorage.getItem("boardname");
-    	console.log(boardname);
        t.closeOverlay();
     });
   });
