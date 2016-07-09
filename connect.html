@@ -20,6 +20,7 @@ var t = TrelloPowerUp.iframe();
     iframe.width = 800;
     iframe.height = 600;
     iframe.id = "iframe"
+    document.appendChild(iframe);
     //document.getElementById("#frame").src = "https://calendar.google.com/calendar/embed?src=" + emailfirst + "%40" + emailsecond + "&ctz=Asia/Taipei";
     $('#MyButton').click(function(){
        var frame = document.getElementsByTagName("iframe")[0];
