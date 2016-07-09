@@ -15,7 +15,11 @@ var t = TrelloPowerUp.iframe();
     emailarray = email.split("@");
     var emailfirst = emailarray[0];
     var emailsecond = emailarray[1];
-    document.getElementById("#frame").src = "https://calendar.google.com/calendar/embed?src=" + emailfirst + "%40" + emailsecond + "&ctz=Asia/Taipei";
+    var iframe = document.createElement("iframe");
+    iframe.src = "https://calendar.google.com/calendar/embed?src=" + emailfirst + "%40" + emailsecond + "&ctz=Asia/Taipei";
+    iframe.width = 800;
+    iframe.height = 600;
+    //document.getElementById("#frame").src = "https://calendar.google.com/calendar/embed?src=" + emailfirst + "%40" + emailsecond + "&ctz=Asia/Taipei";
     $('#MyButton').click(function(){
        var frame = document.getElementsByTagName("iframe")[0];
        frame.remove();
@@ -32,7 +36,7 @@ var t = TrelloPowerUp.iframe();
 <body>
 <input type="button" value="" id="MyButton" style="position:absolute; left:350; background-image: url('http://fsd.servicemax.com/wp-content/uploads/Back-Button-Company-Website.jpg'); height:40;width:70; background-size: 70px 40px;" >
 
-<iframe src ="https://calendar.google.com/calendar/" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no" id="frame"></iframe>
+<!-- <iframe src ="https://calendar.google.com/calendar/" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no" id="frame"></iframe> -->
 
 
 </body>
