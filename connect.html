@@ -5,12 +5,14 @@
 <link rel="stylesheet" href="https://trello.com/power-ups/power-up.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
+var t = TrelloPowerUp.iframe();
   $(document).ready(function(){
     $('#MyButton').click(function(){
        var frame = document.getElementsByTagName("iframe")[0];
        frame.remove();
        var button = document.getElementById("MyButton");
        button.remove();
+       t.closeOverlay();
     });
   });
 </script>
