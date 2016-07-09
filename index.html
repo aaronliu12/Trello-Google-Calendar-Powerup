@@ -17,8 +17,8 @@
 						//var board = t.board('name');
 						t.board('name').then(function(board) {
 							console.log(board.name);
+							localStorage.setItem("boardname", board.name);
 						});
-						localStorage.setItem("boardname", board);
 						t.overlay({url: "./connect.html"
 						})
 
