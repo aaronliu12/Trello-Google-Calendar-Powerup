@@ -5,19 +5,8 @@
 <link rel="stylesheet" href="https://trello.com/power-ups/power-up.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
-var t = TrelloPowerUp.iframe();
-  $(document).ready(function(){
 
-    //document.getElementById("#frame").src = "https://calendar.google.com/calendar/embed?src=" + emailfirst + "%40" + emailsecond + "&ctz=Asia/Taipei";
-    $('#MyButton').click(function(){
-       var frame = document.getElementsByTagName("iframe")[0];
-       frame.remove();
-       var button = document.getElementById("MyButton");
-       button.remove();
-       t.closeOverlay();
-    });
-  });
-; 
+
 </script>
 
 </head>
@@ -33,11 +22,25 @@ var t = TrelloPowerUp.iframe();
 </body>
 <script>
 
+var t = TrelloPowerUp.iframe();
+
 	if (localStorage.getItem("boardname").indexOf("@") < 0){
 		window.alert("Please input the student's email address at the end of the board name");
+		t.closeOverlay();
 	}
 	else{
+	  $(document).ready(function(){
 	
+    //document.getElementById("#frame").src = "https://calendar.google.com/calendar/embed?src=" + emailfirst + "%40" + emailsecond + "&ctz=Asia/Taipei";
+    $('#MyButton').click(function(){
+       var frame = document.getElementsByTagName("iframe")[0];
+       frame.remove();
+       var button = document.getElementById("MyButton");
+       button.remove();
+       t.closeOverlay();
+    });
+  });
+; 
     var boardname = localStorage.getItem("boardname");
   	var array = [];
   	array = boardname.split(" ");
