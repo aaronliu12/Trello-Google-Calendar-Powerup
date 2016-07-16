@@ -15,6 +15,7 @@
     "attachment-thumbnail",
     "attachment-sections",
     "format-url",
+    "show-settings",
     "callback"
   ],
   "connectors": {
