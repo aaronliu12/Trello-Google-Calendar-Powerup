@@ -131,15 +131,7 @@ TrelloPowerUp.initialize({
 										t.overlay({url: "./connect.html"})
 									}
 								}
-								,
-								{
-									text: "Authorize with Trello",
-									callback: function(t) {
-										t.popup({
-											title: "Auth needed",
-											url: 'auth-popup.html'});	
-										}
-								}
+
 							]
 						});
 					}
