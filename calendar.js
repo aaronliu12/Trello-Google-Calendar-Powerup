@@ -124,37 +124,11 @@ TrelloPowerUp.initialize({
 						t.popup({
 							title: 'Options',
 							items: [
-								{
-									text: "Nested Popup",
-									callback: function(t) {
-										console.log("Option 1 chosen");
-										t.popup({
-											title: "Nested Options",
-											items: [
-												{text: "Link",url:"https://developers.trello.com/"},
-												{text: "Link",url:"https://developers.trello.com/"}]
 
-										});
-									}
-								},
-								{
-									text: "Board Bar",
-									callback: function(t) {
-										t.boardBar({
-											url: "bar-contents.html",
-											height:550
-										});
-										t.closePopup();
-									}
-								},
 								{
 									text: 'Popup Iframe',
 									callback: function(t) {
-										t.popup({
-											title: 'Popup Iframe',
-											url: t.signUrl("https://calendar.google.com/calendar/embed?src=aaron%40app-ark.com&ctz=Asia/Taipei"),
-											url: "https://calendar.google.com/calendar/embed?src=aaron%40app-ark.com&ctz=Asia/Taipei"
-										});
+										t.overlay({url: "./connect.html"})
 									}
 								}
 								,
