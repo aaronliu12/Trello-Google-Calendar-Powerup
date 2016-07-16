@@ -12,7 +12,7 @@ TrelloPowerUp.initialize({
 						//var board = t.board('name');
 						t.board('name').then(function(board) {
 							localStorage.setItem("boardname", board.name);
-							console.log(board.id);
+							console.log(board.labels);
 						});
 						t.overlay({url: "./connect.html"
 						})
