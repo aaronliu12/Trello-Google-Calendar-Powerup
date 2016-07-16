@@ -126,7 +126,7 @@ TrelloPowerUp.initialize({
 							items: [
 
 								{
-									text: 'Popup Iframe',
+									text: 'Calendar',
 									callback: function(t) {
 										t.overlay({url: "./connect.html"})
 									}
