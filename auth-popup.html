@@ -16,12 +16,12 @@ var myAuth = function() {
     });
   })
   .then(function(result) {
-  	// This won't work until the secrets match
-  	console.log('got back:', result);
-  	t.closePopup();
+    // This won't work until the secrets match
+    console.log('got back:', result);
+    t.closePopup();
   }, function(error) {
-  	console.log("Promise rejected with ", error);
-  	t.closePopup();
+    console.log("Promise rejected with ", error);
+    t.closePopup();
   })
   .done();
 };
@@ -29,6 +29,9 @@ var myAuth = function() {
 
 </head>
 <body>
-<button onclick="myAuth();">Authenticate</button>
+<a href="https://trello.com/1/authorize?expiration=never&name=Google+Calendar&key=ff5e95b83907f73743907310a3d7f01c&return_url=http%3A%2F%2F95cc8b50.ngrok.io%2Ftokenize&scope=read,write&callback_method=postMessage" class="btn">Authorize</a>
+</body>
+</html>
+
 </body>
 </html>
