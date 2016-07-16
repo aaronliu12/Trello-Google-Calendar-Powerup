@@ -2,6 +2,8 @@
   "name": "Student's Google Calendar",
   "description": "Links to the student's calendar",
   "details":"Link's to student's Google Calendar",
+  "url": "https://aaronliu12.github.io/manifest.json",
+  "key": "ff5e95b83907f73743907310a3d7f01c",
   "icon": {
     "url": "./icon.png"
   },
