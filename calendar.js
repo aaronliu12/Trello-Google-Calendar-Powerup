@@ -157,8 +157,7 @@ TrelloPowerUp.initialize({
 										});
 									}
 								}
-								// The following example needs you to read the secret before it will work, and has been commented out.
-								/*,
+								,
 								{
 									text: "Authorize with Trello",
 									callback: function(t) {
@@ -166,7 +165,7 @@ TrelloPowerUp.initialize({
 											title: "Auth needed",
 											url: 'auth-popup.html'});	
 										}
-								}*/
+								}
 							]
 						});
 					}
