@@ -23,7 +23,6 @@
       $.each(cards, function(index, card) {
         console.log(card);
       });
-    };
 
       
       Trello.get(
