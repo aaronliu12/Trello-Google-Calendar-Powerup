@@ -2,41 +2,41 @@
 //LaPK2PDp
 //553ddc74455d9bcdf5a600fc
 
-    var loadedCards = function(cards) {
-    console.log(cards);
-      $.each(cards, function(index, value) {
-        $('#boards')
-          .append($("<option></option>")
-          .attr("value",value.id)
-          .text(value.name)); 
-      });
-    };
-    var loadCards = function() {
-      //Get the users boards
-      Trello.get(
-        '/members/me/boards/553ddc74455d9bcdf5a600fc/cards',
-        loadedCards,
-        function() { console.log("Failed to load boards"); }
-      );
-    };
-   
-
-    
-   
-    
-
-    
-    
-    Trello.authorize({
-      type: "popup",
-      name: "Trello dashboard",
-      scope: {
-        read: true,
-        write: false },
-      expiration: "never",
-      success: loadCards,
-      error: function() { console.log("Failed authentication"); }
-    });
+//     var loadedCards = function(cards) {
+//     console.log(cards);
+//       $.each(cards, function(index, value) {
+//         $('#boards')
+//           .append($("<option></option>")
+//           .attr("value",value.id)
+//           .text(value.name)); 
+//       });
+//     };
+//     var loadCards = function() {
+//       //Get the users boards
+//       Trello.get(
+//         '/members/me/boards/553ddc74455d9bcdf5a600fc/cards',
+//         loadedCards,
+//         function() { console.log("Failed to load boards"); }
+//       );
+//     };
+//    
+// 
+//     
+//    
+//     
+// 
+//     
+//     
+//     Trello.authorize({
+//       type: "popup",
+//       name: "Trello dashboard",
+//       scope: {
+//         read: true,
+//         write: false },
+//       expiration: "never",
+//       success: loadCards,
+//       error: function() { console.log("Failed authentication"); }
+//     });
 
 TrelloPowerUp.initialize({
 			'board-buttons': function(t, board) {
