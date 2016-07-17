@@ -51,7 +51,9 @@ var t = TrelloPowerUp.iframe();
     var emailfirst = emailarray[0];
     var emailsecond = emailarray[1];
    	var iframe = document.createElement("iframe");
-    iframe.src = "https://calendar.google.com/calendar/embed?src=" + emailfirst + "%40" + emailsecond + "&ctz=Asia/Taipei";
+    iframe.src = email;
+    
+    //iframe.src = "https://calendar.google.com/calendar/embed?src=" + emailfirst + "%40" + emailsecond + "&ctz=Asia/Taipei";
     iframe.width = 800;
     iframe.height = 600;
     iframe.frameborder = 0;
