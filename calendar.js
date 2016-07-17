@@ -15,7 +15,7 @@ TrelloPowerUp.initialize({
 							console.log(board.name);
 						});
 						var cards = document.getElementsByTagName("h2");
-						console.log(cards[0]);
+						console.log(cards);
 
 						for (i = 0; i < cards.length; i++){
 							if (cards[i].innerHTML == "Student Email Address"){
