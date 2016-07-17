@@ -26,7 +26,7 @@
 var t = TrelloPowerUp.iframe();
 	console.log(localStorage.getItem("boardname"));
 	if (localStorage.getItem("boardname").indexOf("https") < 0){
-		window.alert("Please input the student's email address in a card called Student Email Address. 请你把学生的电子邮件写在学生的名字后面。");
+		window.alert("Please input the student's google calendar address at the end of the board name. Shorten the url at 'https://goo.gl/'. 请你把学生的电子邮件写在学生的名字后面。");
 		t.closeOverlay();
 	}
 	else{
