@@ -1,36 +1,24 @@
 
-    var loadedBoards = function(boards) {
-    console.log(boards);
-      $.each(boards, function(index, value) {
-        $('#boards')
+    var loadedCards = function(cards) {
+    console.log(cards);
+      $.each(cards, function(index, value) {
+        $('#cards')
           .append($("<option></option>")
           .attr("value",value.id)
           .text(value.name)); 
       });
     };
-    var loadBoards = function() {
+    var loadCards = function() {
       //Get the users boards
       Trello.get(
         '/members/me/boards/',
-        loadedBoards,
-        function() { console.log("Failed to load boards"); }
+        loadedCards,
+        function() { console.log("Failed to load cards"); }
       );
     };
    
 
     
-    var loadedCards = function(cards) {
-      $.each(cards, function(index, card) {
-        console.log(card);
-      });
-
-      
-      Trello.get(
-        '/boards/' + boardId + '/cards',
-        loadedCards,
-        function() { console.log("Failed to load labels"); }
-      );
-    };
     
 
     
@@ -42,7 +30,7 @@
         read: true,
         write: false },
       expiration: "never",
-      success: loadBoards,
+      success: loadCards,
       error: function() { console.log("Failed authentication"); }
     });
 
