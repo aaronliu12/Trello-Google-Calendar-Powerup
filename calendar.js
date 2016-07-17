@@ -66,7 +66,14 @@ TrelloPowerUp.initialize({
 				if(card.context.card === '563b532e4e998410d0d88e62') {
 					return [{
 						icon: './images/trello-icon-999.svg',
-						text: '4'
+						text: '4',
+						callback: function(t, card) {
+							t.card('name').then(function(card) {
+								console.log(card);
+							});
+
+
+				}
 					}];
 				} else {
 					return [];
@@ -175,7 +182,8 @@ TrelloPowerUp.initialize({
 								{
 									text: 'Calendar',
 									callback: function(t) {
-										t.overlay({url: "./connect.html"})
+										t.overlay({url: "./connect.html"});
+										t.closePopup();
 									}
 								}
 
