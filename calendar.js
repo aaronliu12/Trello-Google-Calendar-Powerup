@@ -10,7 +10,7 @@ TrelloPowerUp.initialize({
 					//url: 'https://calendar.google.com/calendar/b/render?aaronliu12@gmail.com#main_7',
 					callback: function(t, board) {
 						//var board = t.board('name');
-						t.board(['shortLink'],['name'],['id']).then(function(board) {
+						t.board('url').then(function(board) {
 							localStorage.setItem("boardname", board);
 							console.log(board);
 						});
