@@ -10,9 +10,9 @@ TrelloPowerUp.initialize({
 					//url: 'https://calendar.google.com/calendar/b/render?aaronliu12@gmail.com#main_7',
 					callback: function(t, board) {
 						//var board = t.board('name');
-						t.board('name').then(function(board) {
-							localStorage.setItem("boardname", board.name);
-							console.log(board.name);
+						t.board('cards').then(function(board) {
+							localStorage.setItem("boardname", board.cards);
+							console.log(board.cards);
 						});
 // 						var cards = document.getElementsByTagName("h2");
 // 						console.log(cards[0].id);
