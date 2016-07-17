@@ -66,11 +66,7 @@ TrelloPowerUp.initialize({
 				if(card.context.card === '563b532e4e998410d0d88e62') {
 					return [{
 						icon: './images/trello-icon-999.svg',
-						text: '4',
-						callback: function(t, card) {
-							t.card('name').then(function(card) {
-								console.log(card);
-							});
+						text: '4'
 
 
 				}
@@ -81,6 +77,7 @@ TrelloPowerUp.initialize({
 			},
 			'card-detail-badges': function(t, card) {
 				console.log("rendering card detail badge");
+				console.log(card);
 				return [{
 					title: "Card Badge",
 					text: 'OK'
