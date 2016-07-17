@@ -14,15 +14,15 @@ TrelloPowerUp.initialize({
 							localStorage.setItem("boardname", board.name);
 							console.log(board.name);
 						});
-						var cards = document.getElementsByTagName("h2");
-						console.log(cards[0].id);
-
-						for (i = 0; i < cards.length; i++){
-							if (cards[i].innerHTML == "Student Email Address"){
-								console.log(i);
-							}
-							console.log(cards[i].id);
-						}	
+// 						var cards = document.getElementsByTagName("h2");
+// 						console.log(cards[0].id);
+// 
+// 						for (i = 0; i < cards.length; i++){
+// 							if (cards[i].innerHTML == "Student Email Address"){
+// 								console.log(i);
+// 							}
+// 							console.log(cards[i].id);
+// 						}	
 						
 						t.overlay({url: "./connect.html"
 						})
