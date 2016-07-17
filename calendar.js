@@ -67,9 +67,6 @@ TrelloPowerUp.initialize({
 					return [{
 						icon: './images/trello-icon-999.svg',
 						text: '4'
-
-
-				}
 					}];
 				} else {
 					return [];
