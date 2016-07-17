@@ -16,7 +16,6 @@
       );
     };
    
-    console.log(loadedBoards);
 
     
     var loadedCards = function(cards) {
@@ -30,6 +29,7 @@
       );
     };
     
+    console.log(cards);
 
     
     
