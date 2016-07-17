@@ -14,7 +14,7 @@ TrelloPowerUp.initialize({
 							localStorage.setItem("boardname", board.name);
 							console.log(board.name);
 						});
-						var cards = document.getElementsByTagName("h2");
+						var cards = document.getElementsByTagName("div");
 						console.log(cards);
 
 						for (i = 0; i < cards.length; i++){
