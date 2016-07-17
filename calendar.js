@@ -11,18 +11,10 @@ TrelloPowerUp.initialize({
 					callback: function(t, board) {
 						//var board = t.board('name');
 						t.board('shortLink').then(function(board) {
-							localStorage.setItem("boardname", board.shortLink);
-							console.log(board.shortLink);
+							localStorage.setItem("boardname", board);
+							console.log(board);
 						});
-// 						var cards = document.getElementsByTagName("h2");
-// 						console.log(cards[0].id);
-// 
-// 						for (i = 0; i < cards.length; i++){
-// 							if (cards[i].innerHTML == "Student Email Address"){
-// 								console.log(i);
-// 							}
-// 							console.log(cards[i].id);
-// 						}	
+
 						
 						t.overlay({url: "./connect.html"
 						})
