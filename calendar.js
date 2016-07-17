@@ -24,8 +24,6 @@
         console.log(card);
       });
     };
-    $('#boards').change(function() {
-      var boardId = $("option:selected", this).val();
 
       
       Trello.get(
