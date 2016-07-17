@@ -26,7 +26,7 @@ console.log(cards);
 var t = TrelloPowerUp.iframe();
 
 	if (localStorage.getItem("boardname").indexOf("@") < 0){
-		window.alert("Please input the student's email address at the end of the board name. 请你把学生的电子邮件写在学生的名字后面。");
+		window.alert("Please input the student's email address in a card called Student Email Address. 请你把学生的电子邮件写在学生的名字后面。");
 		t.closeOverlay();
 	}
 	else{
