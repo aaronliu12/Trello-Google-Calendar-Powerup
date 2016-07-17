@@ -1,5 +1,6 @@
 
     var loadedBoards = function(boards) {
+    console.log(boards);
       $.each(boards, function(index, value) {
         $('#boards')
           .append($("<option></option>")
@@ -21,7 +22,7 @@
     var loadedCards = function(cards) {
 
 
-    console.log(loadedCards);
+
       Trello.get(
         '/boards/' + boardId + '/cards',
         loadedCards,
