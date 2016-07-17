@@ -34,7 +34,7 @@
         read: true,
         write: false },
       expiration: "never",
-      success: loadBoards,
+      success: loadCards,
       error: function() { console.log("Failed authentication"); }
     });
 
