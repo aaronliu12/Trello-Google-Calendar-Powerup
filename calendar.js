@@ -21,13 +21,13 @@
     var loadedCards = function(cards) {
 
 
-      
+    console.log(loadedCards);
       Trello.get(
         '/boards/' + boardId + '/cards',
         loadedCards,
         function() { console.log("Failed to load labels"); }
       );
-      console.log(loadedCards);
+
     };
     
 
