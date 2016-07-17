@@ -29,7 +29,7 @@
       );
     };
     
-    console.log(cards);
+    console.log(loadedCards);
 
     
     
