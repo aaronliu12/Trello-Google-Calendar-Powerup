@@ -28,7 +28,7 @@
         loadedCards,
         function() { console.log("Failed to load labels"); }
       );
-    });
+    };
     
 
     
