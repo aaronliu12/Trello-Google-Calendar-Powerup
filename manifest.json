@@ -25,7 +25,7 @@
   },
   "recommend": {
     "urls": [
-      "./"
+      "./index.html"
     ]
   }
 }
