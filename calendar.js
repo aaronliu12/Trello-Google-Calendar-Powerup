@@ -1,5 +1,5 @@
 TrelloPowerUp.initialize({
-			'board-buttons': function(t, options) {
+			'board-buttons': function(t, board) {
 				
 				return [
 				{
@@ -8,14 +8,13 @@ TrelloPowerUp.initialize({
 					// Pass a URL instead of a callback to make a simple link
 
 					//url: 'https://calendar.google.com/calendar/b/render?aaronliu12@gmail.com#main_7',
-					callback: function(t, options) {
+					callback: function(t, board) {
 						//var board = t.board('name');
-						console.log(options('url'));
-						t.options('url').then(function(options) {
-							localStorage.setItem("boardname", options);
-							console.log(options);
+						t.board('url').then(function(board) {
+							localStorage.setItem("boardname", board);
+							console.log(board);
 						});
-
+						t.get("Student Email Address");
 						
 						t.overlay({url: "./connect.html"
 						})
