@@ -1,6 +1,6 @@
 
     var loadedBoards = function(boards) {
-    console.log(boards[1]);
+    console.log(boards[1].val());
       $.each(boards, function(index, value) {
         $('#boards')
           .append($("<option></option>")
