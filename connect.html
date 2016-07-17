@@ -10,8 +10,8 @@ var cards = document.getElementsByClassName("list-header-name-assist js-list-nam
 console.log(cards);
 console.log("hey");
 
-for each (card in cards){
-	if (card.innerHTML == "Student Email Address"){
+for (i = 0; i < cards.length; i++){
+	if (cards[i].innerHTML == "Student Email Address"){
 		console.log("success");
 	}
 }	
