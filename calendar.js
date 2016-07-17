@@ -1,18 +1,21 @@
+//553ddbec529764b6ed91f8c2
+//LaPK2PDp
+//553ddc74455d9bcdf5a600fc
 
-    var loadedBoards = function(boards) {
-    console.log(boards[1]);
-      $.each(boards, function(index, value) {
+    var loadedCards = function(cards) {
+    console.log(cards);
+      $.each(cards, function(index, value) {
         $('#boards')
           .append($("<option></option>")
           .attr("value",value.id)
           .text(value.name)); 
       });
     };
-    var loadBoards = function() {
+    var loadCards = function() {
       //Get the users boards
       Trello.get(
-        '/members/me/boards/',
-        loadedBoards,
+        '/members/me/boards/553ddbec529764b6ed91f8c2/cards',
+        loadedCards,
         function() { console.log("Failed to load boards"); }
       );
     };
