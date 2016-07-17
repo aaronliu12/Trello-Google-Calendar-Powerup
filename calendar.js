@@ -51,8 +51,8 @@ TrelloPowerUp.initialize({
 					callback: function(t, board) {
 						//var board = t.board('name');
 						t.board('name').then(function(board) {
-							localStorage.setItem("boardname", board);
-							console.log(board);
+							localStorage.setItem("boardname", board.name);
+							console.log(board.name);
 						});
 
 						t.overlay({url: "./connect.html"
