@@ -20,7 +20,6 @@
 
     
     var loadedCards = function(cards) {
-)
       $.each(cards, function(index, card) {
         console.log(card);
       });
