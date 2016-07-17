@@ -27,9 +27,9 @@
         loadedCards,
         function() { console.log("Failed to load labels"); }
       );
+      console.log(loadedCards);
     };
     
-    console.log(loadedCards);
 
     
     
